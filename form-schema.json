@@ -1,0 +1,31 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Aadhaar Verification",
+      "fields": [
+        {
+          "id": "aadhaarNumber",
+          "label": "1. Aadhaar Number आधार संख्या",
+          "type": "text",
+          "placeholder": "Your Aadhaar No",
+          "validation": {
+            "required": true,
+            "maxLength": 12,
+            "pattern": "^\\d{12}$"
+          }
+        },
+        {
+          "id": "nameAsPerAadhaar",
+          "label": "2. Name of Entrepreneur  उद्यमी का नाम",
+          "type": "text",
+          "placeholder": "Name as per Aadhaar",
+          "validation": {
+            "required": true,
+            "minLength": 2
+          }
+        }
+      ]
+    }
+  ]
+}

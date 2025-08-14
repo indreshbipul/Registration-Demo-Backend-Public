@@ -29,6 +29,7 @@ app.use('/api', authRoutes)
 async function startServer() {
   await prisma.$connect();
   console.log('Database connected');
+  app.listen(3000, () => console.log('Server running'));
 }
 startServer();
 
